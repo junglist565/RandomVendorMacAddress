@@ -18,16 +18,7 @@ namespace FillDatabase
 
             Console.WriteLine("Connecting...");
 
-            try
-            {
-                dbAccess.OpenConnection();
-            }
-            catch (Exception ex)
-            {
-                LogManager.LogException(ex);
-                Console.ReadLine();
-                Environment.Exit(0);
-            }
+            dbAccess.OpenConnection();
 
             Console.WriteLine("Connection successfully estabilished");
             Console.WriteLine("Creating vendors table...\n");

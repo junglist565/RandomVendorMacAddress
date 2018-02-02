@@ -36,7 +36,6 @@ namespace RandomVendorMacAddress
 
             if (adapterRegKey != null)
             {
-                adapterRegKey.CreateSubKey(ADDRESS_REG_KEY);
                 adapterRegKey.SetValue(ADDRESS_REG_KEY, _address.Address, RegistryValueKind.String);
                 adapterRegKey.Close();
 
